@@ -33,3 +33,6 @@
 # Ignore vim files
 **/**/.*.swp
 **/**/.*.swo
+
+# Ignore Mac files
+**/**/.DS_Store
