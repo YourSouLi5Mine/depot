@@ -2,6 +2,10 @@
   <aside id="notice"><%= notice %></aside>
 <% end %>
 
+<% unless @times < 5 %>
+  <h3>You have accesed <%= pluralize(@times, 'time') %><h3>
+<% end %>
+
 <h1>Your Pragmatic Catalog</h1>
 <ul class="catalog">
   <% cache @products do %>
